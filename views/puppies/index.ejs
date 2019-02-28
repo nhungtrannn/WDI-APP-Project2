@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/style.css' >
+    <link href="https://fonts.googleapis.com/css?family=Londrina+Outline" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+    <title>New Pupper Home</title>
+</head>
+<body>
+    <h2>New Puppy Home</h2>
+  <%=  puppies[0].username %>
+
+  <form action="/photos" method="get">
+    <input type="submit" value="Photo Drop">
+  </form>
+  <form action="/users" method="get">
+    <input type="submit" value="Users">
+  </form><br>
+
+  <h2>New Puppy Checklist:<div class='new'>Everything You'll Need For Your New Pupper!</div></h2>
+
+  <h1>To Buy</h1>
+        <form action="/checklists" method="POST">
+            <label>To Buy
+                <select name="toBuy">
+                    <option value="puppy food">puppy food</option>
+                    <option value="treats">treats</option>
+                    <option value="food and water dishes">food and water dishes</option>
+                    <option value="crate">crate</option>
+                    <option value="puppy housetraining pads">puppy housetraining pads</option>
+                    <option value="bedding (at least 3 sets)">bedding (at least 3 sets)</option>
+                    <option value="dog gate(s)">dog gate(s)</option>
+                    <option value="soft, adjustable collar">soft, adjustable collar</option>
+                    <option value="one 4- to 6- foot leash">one 4- to 6- foot leash</option>
+                    <option value="5 or 20 chew toys">5 or 20 chew toys</option>
+                    <option value="soft-bristle brush">soft-bristle brush</option>
+                    <option value="gentle puppy shampoo">gentle puppy shampoo</option>
+                    <option value="dog nail trimmer">dog nail trimmer</option>
+                </select>
+            </label><br>
+            <label>Upcoming Vet Visits:
+              <input type="date" name="departs">
+            </label><br>
+            <input type="submit" value="Add">
+        </form>
+
+
+
+
+</body>
+</html>
