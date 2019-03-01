@@ -3,12 +3,14 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var methodOverride = require('method-override');
 
  // connect to the database with Mongoose
  require('./config/database');
 
 var indexRouter = require('./routes/index');
 var puppiesRouter = require('./routes/puppies');
+var checklistsRouter = require('./routes/checklists');
 
 var app = express();
 
@@ -21,9 +23,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(methodOverride('_method'));
 
 app.use('/', indexRouter);
 app.use('/puppies', puppiesRouter);
+app.use('/', checklistsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

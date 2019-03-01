@@ -2,10 +2,9 @@ body {
   padding: 50px;
   font: 12px 'Shadows Into Light', cursive;
 }
-}
 
-a {
-  color: #00B7FF;
+h3 {
+  font: 16px 'Shadows Into Light', cursive;
 }
 
 h2 {
@@ -13,6 +12,40 @@ h2 {
   font-family: 'Londrina Outline', cursive;
 }
 
-.new {
-  font-family: 'Shadows Into Light', cursive;
+.create {
+  font-size: 30px;
+  font-family: 'Londrina Outline', cursive;
+}
+
+.button {
+padding: 3px 10px 11px !important;
+font: 20px 'Shadows Into Light', cursive;
+background-color: rgb(243, 148, 108);
+font-weight: bold;
+text-shadow: 1px 1px rgb(243, 148, 108);
+color: #ffffff;
+border-radius: 100px;
+border: 1px solid rgb(243, 148, 108);
+cursor: pointer;
+box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+
+}
+
+.btn {
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    cursor: pointer;
+    display: inline-block;
+    font: 12px 'Shadows Into Light', cursive;
+  }
+}
+
+
+img {
+  display: inline-block;
+  max-width: 98%;
+  height: auto;
+  width: 30%;
+  margin: 1%;
 }

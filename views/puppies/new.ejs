@@ -3,14 +3,18 @@
   <head>
     <title>New Puppy</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href="https://fonts.googleapis.com/css?family=Londrina+Outline" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
   </head>
   <body>
-    <h1>Create New Puppy</h1>
-    <form action="/puppies/new" method="post">
-        username: <input type="text" name="username"> </br>
+    <h1 class="create">New Day, New Pup Photo!</h1>
+    <form action="/puppies/new" method="POST">
+        name: <input type="text" name="name" placeholder="Name Of New Puppy"> </br>
         image: <input type="text" name="image" placeholder="Post Image URL"> </br>
-        info: <input type="text" name="info" placeholder="Picture Info"> </br>
-        <input type="submit" value="Submit">
-      </form>    
+        caption: <input type="text" name="caption" placeholder="Picture Caption"> </br>
+        age: <input type="number" name="age" placeholder="Days Old"><br>
+        <br>
+        <input class="add" type="submit" value="Add">
+      </form>   
   </body>
 </html>

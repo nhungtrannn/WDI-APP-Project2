@@ -11,45 +11,22 @@
     <title>New Pupper Home</title>
 </head>
 <body>
-    <h2>New Puppy Home</h2>
-  <%=  puppies[0].username %>
+    <h2>Post A Photo!</h2>
+   <% puppies.forEach(function(puppy) { %>
+    <form action="/puppies/<%= puppy._id %>/delete?_method=DELETE" method="POST">
+      <h1> <%=  puppy.name %> </h1>
+      <img src="<%= puppy.image %>" alt="" class="center" style="width:200px;height:200px;border:0">
+      <h3> <%=  puppy.caption %></h3><br>
+      <h3> <%=  puppy.age %> Days Old</h3><br>
 
-  <form action="/photos" method="get">
-    <input type="submit" value="Photo Drop">
-  </form>
-  <form action="/users" method="get">
-    <input type="submit" value="Users">
+      <input type="submit" value="Edit Caption">
+      <input type="submit" value="Delete Photo">
+    
+      </form>
+   <% }); %>
+
+  <form action="/puppies/new" method="get"><br>
+    <input class="button" type="submit" value="Add Photo"><br>
   </form><br>
-
-  <h2>New Puppy Checklist:<div class='new'>Everything You'll Need For Your New Pupper!</div></h2>
-
-  <h1>To Buy</h1>
-        <form action="/checklists" method="POST">
-            <label>To Buy
-                <select name="toBuy">
-                    <option value="puppy food">puppy food</option>
-                    <option value="treats">treats</option>
-                    <option value="food and water dishes">food and water dishes</option>
-                    <option value="crate">crate</option>
-                    <option value="puppy housetraining pads">puppy housetraining pads</option>
-                    <option value="bedding (at least 3 sets)">bedding (at least 3 sets)</option>
-                    <option value="dog gate(s)">dog gate(s)</option>
-                    <option value="soft, adjustable collar">soft, adjustable collar</option>
-                    <option value="one 4- to 6- foot leash">one 4- to 6- foot leash</option>
-                    <option value="5 or 20 chew toys">5 or 20 chew toys</option>
-                    <option value="soft-bristle brush">soft-bristle brush</option>
-                    <option value="gentle puppy shampoo">gentle puppy shampoo</option>
-                    <option value="dog nail trimmer">dog nail trimmer</option>
-                </select>
-            </label><br>
-            <label>Upcoming Vet Visits:
-              <input type="date" name="departs">
-            </label><br>
-            <input type="submit" value="Add">
-        </form>
-
-
-
-
 </body>
 </html>
