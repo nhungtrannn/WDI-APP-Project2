@@ -17,7 +17,7 @@ This app is perfect for someone opting for a different kind of parenthood: pet p
 # Wireframe
 
 
- ![Image description](https://i.imgur.com/VHH9Mb6.jpg)
+ ![Image description](https://i.imgur.com/HDDx2X8.jpg)
 
 
 
