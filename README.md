@@ -15,7 +15,9 @@ This app is perfect for someone opting for a different kind of parenthood: pet p
 - A user can post, update, and delete photos/captions
 
 # Wireframe
-  IMG_2696.HEIC
+  ![Image description](https://i.imgur.com/VHH9Mb6.jpg)
+  
+  ![Image description](https://i.imgur.com/hI4Ujzk.jpg)
   
 # Technologies Used
 -Node.js
