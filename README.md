@@ -10,7 +10,7 @@ New Puppy One Photo A Day: A One-Year Journal
 
 # User Stories 
 This app is perfect for someone opting for a different kind of parenthood: pet parenthood!
-- A user can start a journal of their pups first year with one photo a day for 365 days
+- A user can start a journal of their puppy's first year with one photo a day for 365 days
 - Every day, take a super cute picture of your super adorable puppy
 - A user can post, update, and delete photos/captions
 
